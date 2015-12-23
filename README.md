@@ -8,7 +8,7 @@ Everything that you need is free, and can be downloaded in a few minutes.
 
 Create a folder somewhere called Survey Prospector, and put the three .R files in it. Then launch RStudio and load the necessary libraries by running at the command prompt (lower left window):
 
-install.packages(c("shiny","binom,"dplyr","tidyr","igraph","ggvis"))
+install.packages(c("shiny","binom","dplyr","tidyr","igraph","ggvis"))
 
 Now use the File menu to find and open ui.R in the Survey Prospector folder. Look for a green arrow with "Run App" near the top of the screen. Click that to run the app.
 
