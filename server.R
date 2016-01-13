@@ -1,4 +1,4 @@
-#This file is part of Survey Prospector
+#This file is part of Survey Prospector  
 
 #Survey Prospector is free software: you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by
@@ -501,7 +501,7 @@ shinyServer(function(input, output, session) {
 
     #OBSERVE ------------------- Generate new predictors based on inputs-----------------
     predictors <- reactive( {
-      #if(denull(input$action[1],0)==0) return() # only runs when the button has been toggled and increments the counter
+      if(denull(input$action[1],0)==0) return() # only runs when the button has been toggled and increments the counter
       
       targetVar <- isolate(input$targetVar)
       targetVarRangeIn <- isolate(input$targetVarRangeIn)
