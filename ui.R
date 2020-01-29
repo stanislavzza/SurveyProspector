@@ -66,7 +66,7 @@ shinyUI( #fluidPage(
             
             tabPanel("Data",
                 tableOutput("dataPanelHeader"),
-                dataTableOutput("varStats")
+                DT::dataTableOutput("varStats")
             ), # end of Data Tabpanel
             
             tabPanel("Filter",  # select optional filter variables
@@ -130,7 +130,7 @@ shinyUI( #fluidPage(
             ), #end of network tab
             tabPanel("Co-predictors",
               htmlOutput('indexInfoCo'),       
-              dataTableOutput('copredictors')
+              DT::dataTableOutput('copredictors')
             ), #end of copredictor tab
             tabPanel("Regression",
                  # fluidRow(
