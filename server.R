@@ -269,7 +269,7 @@ shinyServer(function(input, output, session) {
     })
     
     #OUTPUT-------------------  Create and show dataframe of variable characteristics
-    output$varStats <- renderDataTable({
+    output$varStats <- DT::renderDataTable({
       rvals$updateDataInfo # dependency for intermediate uploads
       rvals$dataLoaded # dependency for final processing
       
@@ -1019,7 +1019,7 @@ output$performance <-renderTable({
       analysisInfo(short=TRUE)
     })    
 
-    output$copredictors <- renderDataTable({
+    output$copredictors <- DT::renderDataTable({
         input$interestCB # set dependency on the checkbox that identifies interest
         
         bestpred <- head(predictors(),50)
